@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./templates/header.css">
+    <link rel="icon" type="image/gif" href="/img/favicon-16x16">
+    <script src="./script.js"></script>
+</head>
+
+
+<body onload="includeHTML()">
+    <div w3-include-html="templates/header.html"></div>
+
+    <div class="contact-form-section" id="contact.html">
+
+        <form action="http://erdal-tok.developerakademie.net/send_mail/send_mail.php"
+      method="POST">
+
+            <h2>Sende uns Dein Rezept</h2>
+
+            <div class="inputbox">
+                <input type="text" name="name" required="required">
+                <span>Dein Name</span>
+            </div>
+
+            <div class="inputbox">
+                <input type="mail" name="mail" required="required">
+                <span>E-Mail</span>
+                </div>
+
+            <div class="inputbox">
+                <textarea name="message" required="required"></textarea> 
+                <span>Deine Nachricht...</span>
+                </div>
+
+            <div class="inputbox button">
+                <input type="submit" name="" value="Senden">
+            </div>
+
+        </form>
+
+    </div>
+
+    
+    <div w3-include-html="templates/footer.html"></div>
+
+
+
+
+</body>
+
+</html>

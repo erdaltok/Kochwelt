@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chili con Carne ohne Bohnen</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./templates/header.css">
+    <link rel="icon" type="image/gif" href="/img/favicon-16x16">
+    <script src="./script.js"></script>
+</head>
+
+
+<body onload="includeHTML()">
+    <div w3-include-html="templates/header.html"></div>
+
+    <div class="recipe-page" id="rezept.html">
+
+        <h1>Chili con Carne ohne Bohnen</h1>
+
+        <img class="recipe-image img-radius" src="./img/chili-con-carne.jpeg" alt="">
+
+        <div class="recipe-effort">
+
+            <div class="receipe-effort-details">
+                <img src="img/icons/clock-regular.svg" alt="">
+                <p>35 Min</p>
+            </div>
+
+
+
+            <div class="receipe-effort-details">
+                <img src="img/icons/brain-solid.svg" alt="">
+                <p>simpel</p>
+            </div>
+
+
+            <div class="receipe-effort-details">
+                <img src="img/icons/calendar-alt-regular.svg" alt="">
+                <p>12.05.2023</p>
+            </div>
+        </div>
+
+        <div class="portions">
+        
+            <p>Zutaten für</p>
+            <input id="inputAmount" type="number" value="2" min="1" max="15">
+            <button onclick="calculate_2()" type="submit">Portionen</button>
+        
+        </div>
+        
+        <table>
+            <tr class="table-radius">
+                <td id="baseAmount1">1 kg fettreduziertes Hackfleisch</td>
+            </tr>
+        
+        
+            <tr>
+                <td id="baseAmount2">400 g gehackte Tomaten</td>
+            </tr>
+        
+        
+            <tr class="table-radius">
+                <td id="baseAmount3">250 ml Rinderbrühe </td>
+            </tr>
+        
+            <tr>
+                <td id="baseAmount4">30 g eingelegte Jalapeno-Scheiben</td>
+            </tr>
+        
+            <tr class="table-radius">
+                <td id="baseAmount5">1/2 Zwiebel</td>
+            </tr>
+        
+            <tr>
+                <td id="baseAmount6">2 Knoblauchzehen</td>
+            </tr>
+        
+            <tr class="table-radius">
+                <td id="baseAmount7">2 EL Tomatenmark</td>
+            </tr>
+        
+            <tr>
+                <td id="baseAmount8">1 EL Butter zum Anbraten</td>
+            </tr>
+        
+            <tr class="table-radius">
+                <td id="baseAmount9">1 TL Paprikapulver</td>
+            </tr>
+        
+            <tr>
+                <td id="baseAmount10">1 TL Salz</td>
+            </tr>
+
+            <tr>
+                <td id="baseAmount11">1 Teelöffelspitze Chilipulver</td>
+            </tr>
+
+            <tr>
+                <td id="baseAmount12">1 Teelöffelspitze Pfeffer</td>
+            </tr>
+
+            <tr>
+                <td id="baseAmount13">1 TL Oregano, gerebelt</td>
+            </tr>
+
+
+
+
+
+        </table>
+
+        <div class="preparation">
+            <h2>Zubereitung</h2>
+
+            <div class="recipe-effort">
+                <div class="receipe-effort-details">
+                    <img src="img/icons/clock-regular.svg" alt="">
+                    <p>ca. 5 Minuten</p>
+                </div>
+
+
+
+                <div class="receipe-effort-details">
+                    <img src="img/icons/clock-regular.svg" alt="">
+                    <p>Gesamtzeit ca. 30 Minuten</p>
+                </div>
+            </div>
+
+
+            <div class="receipe-steps">
+            <p>1. Schritt <br>
+                <br>
+                <span>Eingelegte Jalapeño-Scheiben, Zwiebel, Knoblauchzehen. <br>
+                    <br>
+                    Die Zwiebel, den Knoblauch und die Jalapeño-Scheiben würfeln. <br>
+                    Die Jalapeño-Würfel vorerst beiseite stellen.
+                    Die Zwiebel und den Knoblauch in einen großen Topf geben.</span>
+
+            <p>2. Schritt <br>
+                <br>
+                <span> Butter, Paprikapulver, Oregano, gerebelt, Chilipulver</span>
+            </p>
+
+            <span>Die Butter in dem Topf mit den Zwiebeln und dem Knoblauch zerlassen und beides etwa 3-4 Minuten bei
+                mittel-hoher Hitze
+                glasig anbraten. <br>
+                <br>
+                Anschließend die Gewürze mit in den Topf geben und ebenfalls kurz (etwa 1 Minute) mit anbraten.</span>
+
+
+            <p>3. Schritt <br>
+                <br>
+                <span> Fettreduziertes Hackfleisch</span><br>
+                <br>
+                <span>Danach das Hackfleisch hinzugeben und etwa 10 Minuten anbraten, bis es nicht mehr rosa ist.
+                    Währenddessen die Rinderbrühe nach Packungsanweisung anrühren.</span>
+
+                <br>
+            <p>4. Schritt</p>
+
+            <span>Gehackte Tomaten, Rinderbrühe, Tomatenmark, Jalapeño-Würfel</span><br>
+            <br>
+            <span>Anschließend die gehackten Tomaten, das Tomatenmark, die Rinderbrühe und die Jalapeño-Würfel
+                hinzugeben und alles bei
+                mittlerer Hitze für etwa 10-15 Minuten köcheln lassen. Fertig.  <br>
+                <br>
+                Guten Appetit!
+             </span>
+
+                </div>
+
+
+
+                
+
+            <div>
+                <h3>Rezept erstellt von</h3>
+
+                <div class="creator">
+
+                    <div class="signature">
+                        <img src="img/me2.jpeg" alt="">
+                    </div>
+                    <span>Erdal</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div w3-include-html="templates/footer.html"></div>
+
+
+    <script>
+
+        function add() {
+
+            let base_ingredients = +document.getElementById('base-amount').value;
+            let result_ingredients = +document.getElementById('amount').value;
+
+
+            alert(base_ingredients * result_ingredients)
+
+        }
+
+    </script>
+
+</body>
+
+
+
+</html>

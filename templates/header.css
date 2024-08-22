@@ -1,0 +1,179 @@
+/* HEADER SECTION /////////////////////// */
+
+
+header {
+
+    position: absolute;
+    width: 100%;
+    min-height: 66px;
+    background: white;
+    padding: 4px 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    box-shadow: 0 2px 5px 0 rgb(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+}
+
+.logo-header img {
+    width: 200px;
+    object-fit: cover;
+}
+
+header ul {
+    position: relative;
+    margin-right: 120px;
+
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+    float: left;
+
+}
+
+header ul li a {
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0px 25px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+header ul li a:hover {
+    color: #008000;
+    text-decoration: underline 4px;
+    text-underline-offset: 7px;
+    transition: 75ms
+}
+
+
+
+
+
+
+
+
+/* Responsive Header */
+
+
+@media (max-width: 900px) {
+
+    header {
+        padding: 0px 0px;
+        display: flex;
+        align-items: center;
+    }
+
+    header img {
+        margin: 0px 25px;
+
+    }
+
+    header nav {
+        position: absolute;
+        width: 100%;
+        top: 82px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #EFEFEF;
+        display: none;
+
+
+    }
+
+    header.active nav {
+        display: initial;
+
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    header nav ul li:hover {
+        background: #008000;
+        width: 100%;
+
+
+    }
+
+    header nav ul li a {
+        width: 100%;
+        padding: 25px 25px;
+
+    }
+
+
+
+
+    header ul li a:hover {
+        text-decoration: none;
+        background: #008000;
+        color: black;
+
+
+    }
+
+    .menuToggle {
+        position: relative;
+        width: 40px;
+        height: 50px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 16px;
+    }
+
+    .menuToggle::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background: black;
+        transform: translateY(-12px);
+        box-shadow: 0 12px black;
+        transition: transform 0.35s ease-out;
+    }
+
+    .menuToggle::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background: black;
+        transform: translateY(12px);
+        transition: transform 0.35s ease-out;
+    }
+
+    header.active .menuToggle::before {
+        transform: rotate(45deg);
+        box-shadow: 0 0 white;
+        transition: transform 0.35s ease-out;
+
+
+    }
+
+    header.active .menuToggle::after {
+        transform: rotate(315deg);
+        transition: transform 0.35s ease-out;
+
+    }
+
+
+}

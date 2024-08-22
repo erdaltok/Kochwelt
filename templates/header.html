@@ -1,0 +1,32 @@
+<header>
+
+  <a href="" class="logo-header">
+    <img src="./templates/logo.png" alt="Logo Navbar">
+  </a>
+
+  <div class="menuToggle"></div>
+
+  <nav>
+
+    <ul>
+
+      <li><a href="index.html">Start</a></li>
+      <li><a href="chicken_recipe.html">Rezept des Tages</a></li>
+      <li><a href="contact.html">Kontakt</a></li>
+      <li><a href="imprint.html">Impressum</a></li>
+
+    </ul>
+
+  </nav>
+</header>
+
+<script>
+  let menuToggle = document.querySelector('.menuToggle');
+  let header = document.querySelector('header');
+  menuToggle.onclick = function () {
+    header.classList.toggle('active');
+
+  }
+
+
+</script>
